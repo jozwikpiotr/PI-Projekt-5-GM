@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+  <!--<meta http-equiv="Content-type" content="text/html; charset=utf-8">-->
+  <meta charset="utf-8" />
+  <meta name="description" content="Programowanie Internetowe - Projekty"/>
+  <meta name="keywords" content="programowanie, internetowe" />
+  <meta http-equiv= "X-UA-Compatible" content="IE=Edge"/>
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+  <title>Mapa</title>
+
+  <link rel="Stylesheet" href="../index.css" type="text/css">
+  <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+  <script src="map.js" type="text/javascript"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhxau8MzngQAic_6uJQ67GL9yHLxah0So&signed_in=true&callback=initMap"
+            async defer></script>
+
+</head>
+  
+<body>
+<div class="bloknagMAP">
+		<h1 id="kontenernag" > Mapa</h1>
+</div>
+
+<div id="bloklinkMAP">
+		<div class="linkbut">
+		<a class="link" href="GM/googlemaps.html">Założenia</a><br>
+		</div>
+		<div class="linkbut">
+		<a class="link" href="map.html">Mapa</a><br/>
+		</div>
+		<div class="linkbut">
+		<a class="link" href="">Zródło</a><br/>
+		</div>
+
+</div>
+
+
+<div id="elevation_chart"></div>
+<div id="map"></div>
+<div id="right-panel">
+    <b>Podróż: </b>
+    <select id="mode">
+        <option value="DRIVING">Samochodem</option>
+        <option value="WALKING">Pieszo</option>
+        <option value="BICYCLING">Rowerem</option>
+        <option value="TRANSIT">Komunikacją miejską</option>
+    </select>
+	<div id="some-panel"></div>
+</div>
+
+<div class="walidators">
+		<p>
+    			<a href="http://jigsaw.w3.org/css-validator/check/referer">
+        			<img style="border:0;width:88px;height:31px"
+            				src="http://jigsaw.w3.org/css-validator/images/vcss"
+            				alt="Poprawny CSS!" />
+    			</a>
+			<a href=" http://validator.w3.org/check?uri=referer">
+				<img src=" http://www.w3.org/Icons/valid-html401"
+					alt="Valid HTML 4.01 Transitional" height="31" width="88">
+			</a>
+		</p>
+</div>
+
+</body>
